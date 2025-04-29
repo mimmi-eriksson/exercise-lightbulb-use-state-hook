@@ -33,6 +33,10 @@
   background-color: #ffd700;
 }
 
+.lightbulb.on.disco {
+  animation: discoColors 4s infinite;
+}
+
 .lightbulb.on .bulb {
   box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -43,4 +47,32 @@
 
 .lightbulb.off .bulb {
   box-shadow: none;
+}
+
+.disco-button {
+  margin-block: 20px;
+}
+
+
+
+@keyframes discoColors {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  75% {
+    background-color: green;
+  }
+
+  100% {
+    background-color: red;
+  }
 }
